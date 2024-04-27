@@ -1,7 +1,6 @@
 # Tag Arena Maps
 
-Arena Maps ported to Tag, by Me.
+Arena Maps ported to Tag, by me.
 
 Maps by
-djoslin0
-Chilly/chillyzone
+djoslin0, Chilly/chillyzone
