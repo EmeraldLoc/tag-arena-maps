@@ -3,4 +3,5 @@
 Arena Maps ported to Tag, by me.
 
 Maps by
-djoslin0, Chilly/chillyzone
+- djoslin0
+- Chilly/chillyzone
