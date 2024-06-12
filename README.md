@@ -1,7 +1,10 @@
 # Tag Arena Maps
 
-Arena Maps ported to Tag, by me.
+Arena Maps ported to Tag.
 
-Maps by
-- djoslin0
+Maps Makers:
+- djoslin0/MysterD
 - Chilly/chillyzone
+
+Porters:
+- Bear64DX
