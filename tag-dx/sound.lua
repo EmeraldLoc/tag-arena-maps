@@ -10,7 +10,7 @@ local bgms = {
 	--[LEVEL_ARENA_SPIRE] =         {audio='snow.ogg',    loopEnd = 500,     loopStart = 0,      volume = -5, name="Frosty Citadel - Sonic Gaiden"  }, -- Spire
 	[LEVEL_ARENA_RAINBOW] = { audio = 'rainbow.ogg', loopEnd = 148.657, loopStart = 12.406, volume = -5, name = "Rainbow Road - Coop Deluxe" },     -- Rainbow
 	[LEVEL_ARENA_CITY] = { audio = 'city.ogg', loopEnd = 500, loopStart = 06.975, volume = -5, name = "City Outskirts - Sonic Megamix" },            -- City
-	[LEVEL_ARENA_SPACE] = { audio = 'space.ogg', loopEnd = 300, loopStart = 06.975, volume = -5, name = "Echo the Dolphin - Title Screen" },        -- Space
+	[LEVEL_ARENA_SPACE] = { audio = 'space.ogg', loopEnd = 300, loopStart = 06.975, volume = -5, name = "DuckTales Remastered - The Moon" },        -- Space
 }
 
 -- disable cap music
