@@ -48,3 +48,19 @@ end
 
 hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
 hook_event(HOOK_ON_WARP, on_warp)
+
+--Non Slippery Collision
+---@param m MarioState
+local function mario_update(m)
+    if m.playerIndex ~= 0 then return end
+    local np = gNetworkPlayers[0]
+
+    if np.currLevelNum ~= LEVEL_NS then return end
+
+    if m.floor and m.floor.type == SURFACE_DEFAULT then
+        m.floor.type = SURFACE_HARD_NOT_SLIPPERY
+    end
+end
+
+hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
+hook_event(HOOK_MARIO_UPDATE, mario_update)
