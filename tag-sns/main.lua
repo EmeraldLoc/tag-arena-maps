@@ -36,4 +36,15 @@ function on_level_init()
     )
 end
 
+local function on_warp()
+    local m = gMarioStates[0]
+
+    if gNetworkPlayers[0].currLevelNum == LEVEL_NS then
+        m.pos.x = -452
+        m.pos.y = -942
+        m.pos.z = 4387
+    end
+end
+
 hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
+hook_event(HOOK_ON_WARP, on_warp)
