@@ -7,11 +7,17 @@ local audioMain = nil    --Used for the main audio
 local audioSpecial = nil --Used for things like cap music
 local audioCurSeq = nil
 local bgms = {
-	--[LEVEL_ARENA_SPIRE] =         {audio='snow.ogg',    loopEnd = 500,     loopStart = 0,      volume = -5, name="Frosty Citadel - Sonic Gaiden"  }, -- Spire
-	[LEVEL_ARENA_RAINBOW] = { audio = 'rainbow.ogg', loopEnd = 148.657, loopStart = 12.406, volume = -5, name = "Rainbow Road - Coop Deluxe" },     -- Rainbow
-	[LEVEL_ARENA_CITY] = { audio = 'city.ogg', loopEnd = 500, loopStart = 06.975, volume = -5, name = "City Outskirts - Sonic Megamix" },            -- City
+	[LEVEL_ARENA_RAINBOW] = { audio = 'rainbow.ogg', loopEnd = 148.657, loopStart = 12.406, volume = 1.5, name = "Rainbow Road - Coop Deluxe" },    -- Rainbow
+	[LEVEL_ARENA_CITY] = { audio = 'city.ogg', loopEnd = 500, loopStart = 06.975, volume = 1.35, name = "City Outskirts - Sonic Megamix" },         -- City
 	[LEVEL_ARENA_SPACE] = { audio = 'space.ogg', loopEnd = 300, loopStart = 06.975, volume = -5, name = "Echo the Dolphin - Title Screen" },        -- Space
 }
+
+function linear_interpolation(input, minRange, maxRange, minInput, maxInput)
+    local m = (maxRange - minRange) / (maxInput - minInput)
+    local b = minRange - m * minInput
+
+    return m * input + b
+end
 
 -- disable cap music
 function music()

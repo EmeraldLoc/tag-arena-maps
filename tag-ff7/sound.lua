@@ -7,9 +7,9 @@ local audioMain = nil    --Used for the main audio
 local audioSpecial = nil --Used for things like cap music
 local audioCurSeq = nil
 local bgms = {
-	[LEVEL_HANGOUT_GAIA_WEST] = { audio = 'FF7main_mario.ogg', loopEnd = 148.657, loopStart = 12.406, volume = -5, name = "ff7gw" },     -- Rainbow
-	[LEVEL_HANGOUT_GAIA_EAST] = { audio = 'FF7main_mario.ogg', loopEnd = 500, loopStart = 06.975, volume = -5, name = "ff7ge" },            -- City
-	[LEVEL_HANGOUT_GAIA_NORTH] = { audio = 'FF7main_mario.ogg', loopEnd = 300, loopStart = 06.975, volume = -5, name = "ff7gn" },        -- Space
+	[LEVEL_HANGOUT_GAIA_WEST] = { audio = 'FF7main_mario.ogg', loopEnd = 148.657, loopStart = 12.406, volume = 1, name = "ff7gw" },     -- Gaia West
+	[LEVEL_HANGOUT_GAIA_EAST] = { audio = 'FF7main_mario.ogg', loopEnd = 500, loopStart = 06.975, volume = 1, name = "ff7ge" },            -- Gaia East
+	[LEVEL_HANGOUT_GAIA_NORTH] = { audio = 'FF7main_mario.ogg', loopEnd = 300, loopStart = 06.975, volume = 1, name = "ff7gn" },        -- Gaia North
 }
 
 -- disable cap music
