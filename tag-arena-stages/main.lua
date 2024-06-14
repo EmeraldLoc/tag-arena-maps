@@ -7,6 +7,7 @@ LEVEL_ARENA_PILLARS   = level_register('level_arena_pillars_entry',   COURSE_NON
 LEVEL_ARENA_FORTS     = level_register('level_arena_forts_entry',     COURSE_NONE, 'Forts',     'forts',     28000, 0x08, 0x08, 0x08)
 LEVEL_ARENA_CITADEL   = level_register('level_arena_citadel_entry',   COURSE_NONE, 'Citadel',   'citadel',   28000, 0x08, 0x08, 0x08)
 LEVEL_ARENA_SPIRE     = level_register('level_arena_spire_entry',     COURSE_NONE, 'Spire',     'spire',     28000, 0x08, 0x08, 0x08)
+LEVEL_ARENA_PLATFORMS = level_register('level_arena_platforms_entry',     COURSE_NONE, 'Platforms',     'platforms', 28000, 0x08, 0x08, 0x08)
 
 local addedLevels = false
 
@@ -27,6 +28,7 @@ function on_level_init()
     _G.tag.add_level(LEVEL_ARENA_FORTS, "Forts", get_texture_info("painting_forts"), 1, nil, nil)
     _G.tag.add_level(LEVEL_ARENA_CITADEL, "Citadel", get_texture_info("painting_citadel"), 1, nil, nil)
     _G.tag.add_level(LEVEL_ARENA_SPIRE, "Spire", get_texture_info("painting_spire"), 1, nil, nil)
+    _G.tag.add_level(LEVEL_ARENA_PLATFORMS, "Platforms", get_texture_info("painting_platforms"), 1, nil, nil)
 end
 
 hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
