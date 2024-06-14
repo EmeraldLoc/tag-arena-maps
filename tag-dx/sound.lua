@@ -12,13 +12,6 @@ local bgms = {
 	[LEVEL_ARENA_SPACE] = { audio = 'space.ogg', loopEnd = 300, loopStart = 06.975, volume = -5, name = "Echo the Dolphin - Title Screen" },        -- Space
 }
 
-function linear_interpolation(input, minRange, maxRange, minInput, maxInput)
-    local m = (maxRange - minRange) / (maxInput - minInput)
-    local b = minRange - m * minInput
-
-    return m * input + b
-end
-
 -- disable cap music
 function music()
 	local np = gNetworkPlayers[0]
