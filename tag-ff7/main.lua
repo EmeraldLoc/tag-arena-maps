@@ -91,6 +91,10 @@ local function on_warp()
         m.pos.x = -2832
         m.pos.y = -5462
         m.pos.z = 6545
+    elseif np.currLevelNum == LEVEL_HANGOUT_GAIA_WEST then
+        m.pos.x = 2683
+        m.pos.y = -5130
+        m.pos.z = 3100
     end
 end
 
