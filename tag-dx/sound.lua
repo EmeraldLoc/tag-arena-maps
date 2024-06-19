@@ -9,7 +9,7 @@ local audioCurSeq = nil
 local bgms = {
 	[LEVEL_ARENA_RAINBOW] = { audio = 'rainbow.ogg', loopEnd = 148.657, loopStart = 12.406, volume = 1.5, name = "Rainbow Road - Coop Deluxe" },    -- Rainbow
 	[LEVEL_ARENA_CITY] = { audio = 'city.ogg', loopEnd = 500, loopStart = 06.975, volume = 1.35, name = "City Outskirts - Sonic Megamix" },         -- City
-	[LEVEL_ARENA_SPACE] = { audio = 'space.ogg', loopEnd = 300, loopStart = 06.975, volume = -5, name = "Echo the Dolphin - Title Screen" },        -- Space
+	[LEVEL_ARENA_SPACE] = { audio = 'space.ogg', loopEnd = 300, loopStart = 06.975, volume = 8.206, name = "Echo the Dolphin - Title Screen" },        -- Space
 }
 
 -- disable cap music
