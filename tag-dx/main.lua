@@ -19,8 +19,8 @@ function on_level_init()
         djui_popup_create("Tag was not found!", 2)
         return
     end
--- fix collision
-gLevelValues.fixCollisionBugs = 1
+    -- fix collision
+    gLevelValues.fixCollisionBugs = 1
 
     -- add the level to tag
     _G.tag.add_level(LEVEL_ARENA_RAINBOW, "Rainbow Road", get_texture_info("painting_rainbow"), 1, nil, nil)

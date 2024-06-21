@@ -34,7 +34,8 @@ function on_level_init()
                 { x = 11082, y = -5516, z = 11086 },
                 { x = -7786, y = -5516, z = -4441 }
             }
-        }
+        },
+        { x = 2683, y = -5130, z = 3100 }
     )
     _G.tag.add_level(
         LEVEL_HANGOUT_GAIA_EAST,
@@ -46,7 +47,8 @@ function on_level_init()
                 { x = -8864, y = -5435, z = -62 },
                 { x = 5447, y = -5447, z = -4166 }
             }
-        }
+        },
+        { x = -6222, y = -5419, z = -8476 }
     )
     _G.tag.add_level(
         LEVEL_HANGOUT_GAIA_NORTH,
@@ -58,7 +60,8 @@ function on_level_init()
                 { x = -6397, y = -5470, z = 4408 },
                 { x = 12753, y = -5279, z = -10864 }
             }
-        }
+        },
+        { x = -2832, y = -5462, z = 6545 }
     )
 end
 
@@ -78,26 +81,3 @@ end
 
 hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
 hook_event(HOOK_MARIO_UPDATE, mario_update)
-
-local function on_warp()
-    local m = gMarioStates[0]
-    local np = gNetworkPlayers[0]
-
-    if np.currLevelNum == LEVEL_HANGOUT_GAIA_EAST then
-        m.pos.x = -6222
-        m.pos.y = -5419
-        m.pos.z = -8476
-    elseif np.currLevelNum == LEVEL_HANGOUT_GAIA_NORTH then
-        m.pos.x = -2832
-        m.pos.y = -5462
-        m.pos.z = 6545
-    elseif np.currLevelNum == LEVEL_HANGOUT_GAIA_WEST then
-        m.pos.x = 2683
-        m.pos.y = -5130
-        m.pos.z = 3100
-    end
-end
-
-hook_event(HOOK_ON_WARP, on_warp)
-
-

@@ -35,10 +35,6 @@ end
 -----
 
 function on_warp()
-
-    --debug that gives me level id on warp when enabled
-    --djui_popup_create(gNetworkPlayers[0].currLevelNum .. "", 2)
-
     if gNetworkPlayers[0].currLevelNum == 105 then
         stop_background_music(get_current_background_music())
         audio_stream_stop(audioToPlay)
@@ -49,7 +45,6 @@ function on_warp()
         audio_stream_play(audioToPlay, true, 1)
     else
         audio_stream_stop(audioToPlay)
-
     end
 end
 
