@@ -22,4 +22,15 @@ local function on_level_init()
     _G.tag.add_level(LEVEL_FINAL_DESTINATION, "Final Destination", get_texture_info("painting_fd"), 1, nil, nil)
 end
 
+local function on_warp()
+    local m = gMarioStates[0]
+
+    if gNetworkPlayers[0].currLevelNum == LEVEL_FINAL_DESTINATION then
+        m.pos.x = 0
+        m.pos.y = 4592
+        m.pos.z = 58
+    end
+end
+
 hook_event(HOOK_ON_LEVEL_INIT, on_level_init)
+hook_event(HOOK_ON_WARP, on_warp)
